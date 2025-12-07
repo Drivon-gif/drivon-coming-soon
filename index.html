@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Drivon | Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Drivon – Modern towing. Smarter logistics. Real service." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --drivon-blue: #0b8bff;
+      --drivon-red: #ff2738;
+      --drivon-text: #111111;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #ffffff;
+      color: var(--drivon-text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      text-align: center;
+      padding: 24px;
+    }
+
+    .logo {
+      max-width: 320px;
+      width: 70vw;
+      height: auto;
+      margin-bottom: 14px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(11, 139, 255, 0.35);
+      color: var(--drivon-blue);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 12px;
+    }
+
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--drivon-red);
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 2.4vw, 2rem);
+      font-weight: 400;
+      margin-top: 10px;
+      color: var(--drivon-text);
+    }
+
+    .footer-fixed {
+      position: fixed;
+      left: 50%;
+      bottom: 16px;
+      transform: translateX(-50%);
+      font-size: 0.8rem;
+      color: #9a9a9a;
+      text-align: center;
+      pointer-events: none;
+    }
+
+    .footer-fixed strong {
+      font-weight: 500;
+      color: #555555;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="drivon-logo.png" alt="Drivon logo" class="logo" />
+    <div class="pill">
+      <span class="pill-dot"></span>
+      <span>We’re Nearly Ready</span>
+    </div>
+    <h1>Modern towing. Smarter logistics. Real service.</h1>
+  </div>
+
+  <div class="footer-fixed">
+    © 2025 <strong>Drivon Limited</strong> · All rights reserved.
+  </div>
+</body>
+</html>
